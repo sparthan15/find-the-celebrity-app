@@ -9,7 +9,7 @@ public class Person {
 
 	public Person(String name) {
 		this.name = name;
-		this.observed = new HashSet<>();
+		this.observed = new HashSet<Person>();
 	}
 
 	

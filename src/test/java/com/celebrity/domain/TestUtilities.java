@@ -33,7 +33,8 @@ public class TestUtilities {
 		people.add(kevin);
 		people.add(michaelJordan);
 		people.add(juan); 
-		xTeam = new Team(people);
+		ICelebrity basketballCelebrity = new BasketballCelebrity();
+		xTeam = new Team(people, basketballCelebrity);
 	}
 
 }
