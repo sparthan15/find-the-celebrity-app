@@ -5,19 +5,19 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-class PersonTest extends TestUtilities  {
+class PersonSpec extends TestUtilities  {
 
 	
 	@Test
-	void givenImAPersonWhenIBelongToATeamAndIamNotACelebrityThenIknowSomebody() {
+	void givenImAPersonWhenIBelongToATeamAndIamIknowSomebodyThenIamNotACelebrity() {
 
-		assertFalse(xTeam.findTheCelebrity().contains(carlos));
+		assertFalse(xTeam.findTheCelebrities().contains(carlos));
 	}
 	
 	@Test
 	void givenImAPersonWhenIBelongToATeamAndIamACelebrityThenIDoNotknowAnybodyAndAllPeopleKnowMe() {
 
-		assertTrue(xTeam.findTheCelebrity().contains(michaelJordan));
+		assertTrue(xTeam.findTheCelebrities().contains(michaelJordan));
 	}
 	
 }

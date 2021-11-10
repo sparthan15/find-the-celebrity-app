@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import com.celebrity.domain.utilities.IamACelebrity;
 
-class IamACelebrityTest extends TestUtilities {
+class IamACelebritySpec extends TestUtilities {
 
 	private IamACelebrity iamACelebrity = new IamACelebrity();
 
